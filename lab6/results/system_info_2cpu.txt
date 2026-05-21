@@ -1,0 +1,76 @@
+--- Date ---
+Thu May 21 01:02:26 MSK 2026
+
+--- OS ---
+NAME="CentOS Linux"
+VERSION="8 (Core)"
+ID="centos"
+ID_LIKE="rhel fedora"
+VERSION_ID="8"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="CentOS Linux 8 (Core)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:centos:centos:8"
+HOME_URL="https://www.centos.org/"
+BUG_REPORT_URL="https://bugs.centos.org/"
+
+CENTOS_MANTISBT_PROJECT="CentOS-8"
+CENTOS_MANTISBT_PROJECT_VERSION="8"
+REDHAT_SUPPORT_PRODUCT="centos"
+REDHAT_SUPPORT_PRODUCT_VERSION="8"
+
+
+--- Kernel ---
+Linux localhost.localdomain 4.18.0-348.7.1.el8_5.x86_64 #1 SMP Wed Dec 22 13:25:12 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+
+--- CPU ---
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              2
+On-line CPU(s) list: 0,1
+Thread(s) per core:  1
+Core(s) per socket:  2
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           AuthenticAMD
+CPU family:          25
+Model:               80
+Model name:          AMD Ryzen 7 5800H with Radeon Graphics
+Stepping:            0
+CPU MHz:             3193.916
+BogoMIPS:            6387.83
+Hypervisor vendor:   KVM
+Virtualization type: full
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            512K
+L3 cache:            16384K
+NUMA node0 CPU(s):   0,1
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch vmmcall fsgsbase bmi1 avx2 bmi2 invpcid rdseed adx clflushopt sha_ni arat
+
+--- Memory ---
+              total        used        free      shared  buff/cache   available
+Mem:          1.8Gi       169Mi       1.4Gi       8.0Mi       230Mi       1.5Gi
+Swap:         819Mi          0B       819Mi
+
+--- Disks ---
+NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda           8:0    0    8G  0 disk 
+├─sda1        8:1    0    1G  0 part /boot
+└─sda2        8:2    0    6G  0 part 
+  ├─cl-root 253:0    0  4.2G  0 lvm  /
+  ├─cl-swap 253:1    0  820M  0 lvm  [SWAP]
+  └─cl-home 253:2    0  956M  0 lvm  /home
+sr0          11:0    1 50.9M  0 rom  
+
+--- Filesystem usage ---
+Filesystem           Size  Used Avail Use% Mounted on
+devtmpfs             893M     0  893M   0% /dev
+tmpfs                909M     0  909M   0% /dev/shm
+tmpfs                909M  8.8M  900M   1% /run
+tmpfs                909M     0  909M   0% /sys/fs/cgroup
+/dev/mapper/cl-root  4.1G  2.3G  1.6G  59% /
+/dev/sda1            976M  190M  720M  21% /boot
+/dev/mapper/cl-home  950M  265M  686M  28% /home
+tmpfs                182M     0  182M   0% /run/user/1000
